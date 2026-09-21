@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LANGA — open tools · humans decide</title>
+<meta name="description" content="LANGA Corporation — open tools pulled out of production. Humans decide.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#050505">
+<link rel="canonical" href="https://langacorp.github.io/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' fill='%23050505'/><rect x='5' y='5' width='6' height='6' fill='%23ff1a1a'/></svg>">
+<style>
+:root{--bg:#050505;--fg:#f5f5f5;--mut:#7d7d7d;--line:#1f1f1f;--red:#ff1a1a;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;--sans:"Helvetica Neue",Helvetica,Arial,system-ui,sans-serif}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--fg);overflow-x:hidden}
+body{font:15px/1.6 var(--mono);background-image:radial-gradient(ellipse at 85% 0%,rgba(255,26,26,.16),transparent 55%),linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:auto,48px 48px,48px 48px}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;background:repeating-linear-gradient(0deg,rgba(255,255,255,.035) 0 1px,transparent 1px 3px)}
+a{color:inherit}
+.w{padding:0 clamp(20px,5vw,80px)}
+.m{font-family:var(--mono);font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--mut)}
+.r{color:var(--red)}
+header{position:sticky;top:0;z-index:40;background:rgba(5,5,5,.8);backdrop-filter:blur(6px);padding-top:env(safe-area-inset-top,0px);border-bottom:1px solid;border-image:linear-gradient(90deg,var(--red),transparent 60%) 1}
+header .w{display:flex;justify-content:space-between;align-items:center;height:54px}
+.logo{font-weight:800;color:var(--red);text-decoration:none;font-size:14px;text-shadow:0 0 12px rgba(255,26,26,.6)}
+.logo b{color:var(--fg)}
+nav a{margin-left:24px;text-decoration:none}
+nav a:hover{color:var(--red)}
+.hero{min-height:calc(100vh - 54px);display:flex;flex-direction:column;justify-content:center;padding-top:48px;padding-bottom:48px}
+h1{font:900 clamp(58px,13vw,230px)/.84 var(--sans);letter-spacing:-.04em;margin:22px 0 34px;text-transform:uppercase;text-shadow:0 0 40px rgba(255,26,26,.18)}
+h1 i{font-style:normal;color:var(--red);text-shadow:0 0 24px var(--red)}
+.gl{position:relative}
+.gl::before,.gl::after{content:attr(data-t);white-space:pre-line;position:absolute;inset:0;pointer-events:none;clip-path:inset(0 0 100% 0)}
+.gl::before{color:var(--red);animation:g1 4s infinite steps(1)}
+.gl::after{color:#fff;animation:g2 4s infinite steps(1)}
+@keyframes g1{0%,88%,100%{clip-path:inset(0 0 100% 0);transform:none}89%{clip-path:inset(8% 0 62% 0);transform:translate(6px,-2px)}92%{clip-path:inset(58% 0 12% 0);transform:translate(-5px,2px)}95%{clip-path:inset(30% 0 45% 0);transform:translate(4px,0)}}
+@keyframes g2{0%,90%,100%{clip-path:inset(0 0 100% 0);transform:none}91%{clip-path:inset(70% 0 4% 0);transform:translate(-6px,1px)}94%{clip-path:inset(20% 0 66% 0);transform:translate(5px,-1px)}}
+.lead{max-width:40em;font:18px/1.6 var(--sans);color:#c9c9c9;margin:0 0 36px}
+.btn{display:inline-block;font:700 11px var(--mono);letter-spacing:2.5px;text-transform:uppercase;padding:16px 24px;text-decoration:none;border:1px solid var(--fg);margin:0 12px 12px 0;clip-path:polygon(0 0,100% 0,100% 70%,calc(100% - 12px) 100%,0 100%)}
+.btn.p{background:var(--red);border-color:var(--red);box-shadow:0 0 28px rgba(255,26,26,.45)}
+.btn:hover{background:var(--fg);border-color:var(--fg);color:var(--bg)}
+.term{font:13px/2 var(--mono);margin-top:56px;color:#a8a8a8}
+.term em{font-style:normal;color:var(--red)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:0 clamp(20px,5vw,80px)}
+.stats>div{padding:40px 0 34px;border-right:1px solid var(--line);padding-right:24px;padding-left:24px}
+.stats>div:first-child{padding-left:0}
+.stats>div:last-child{border-right:0}
+.stats b{display:block;font:900 clamp(52px,6vw,88px)/1 var(--sans);letter-spacing:-2px;margin-bottom:14px}
+.stats b.r{text-shadow:0 0 30px rgba(255,26,26,.7)}
+.stats small{display:block;margin-top:6px;font:10px var(--mono);letter-spacing:1px;color:#4d4d4d}
+.chips{overflow:hidden;border-bottom:1px solid var(--line);padding:22px 0;white-space:nowrap}
+.track{display:inline-flex;gap:44px;padding-left:44px;animation:mq 45s linear infinite}
+.track span::before{content:"● ";color:var(--red)}
+@keyframes mq{to{transform:translateX(-50%)}}
+section{padding:120px 0}
+.card{display:grid;grid-template-columns:auto 1fr;gap:clamp(24px,4vw,64px);align-items:center}
+.mono{font:900 clamp(110px,18vw,300px)/.8 var(--sans);letter-spacing:-.06em;color:var(--red);text-shadow:0 0 50px rgba(255,26,26,.45)}
+.card h2{font:900 clamp(40px,6vw,96px)/.9 var(--sans);letter-spacing:-.03em;margin:0 0 16px;text-transform:uppercase}
+.links{display:flex;flex-wrap:wrap;gap:12px 30px;margin-top:30px}
+.links a{font:12px var(--mono);text-decoration:none;border-bottom:1px solid transparent}
+.links a::before{content:"→ ";color:var(--red)}
+.links a:hover{color:var(--red);border-bottom-color:var(--red)}
+footer{border-top:1px solid var(--line);padding:28px 0 calc(48px + env(safe-area-inset-bottom,0px))}
+@media(max-width:680px){.card{grid-template-columns:1fr}nav a:not(:last-child){display:none}.stats>div{border-right:0;border-bottom:1px solid var(--line);padding-left:0}}
+@media(prefers-reduced-motion:reduce){.gl::before,.gl::after,.track{animation:none}}
+#list{border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:70px minmax(160px,1fr) 2.2fr 130px;gap:24px;align-items:baseline;padding:28px clamp(20px,5vw,80px);border-bottom:1px solid var(--line);text-decoration:none;transition:background .15s}
+.row .t{font:900 clamp(26px,3vw,44px)/1 var(--sans);letter-spacing:-.02em;text-transform:lowercase}
+.row .d{color:#b5b5b5;font:15px/1.55 var(--sans)}
+.row .l{text-align:right;color:var(--red)}
+.row:hover{background:rgba(255,26,26,.07)}
+.row:hover .t{color:var(--red);text-shadow:0 0 18px rgba(255,26,26,.6)}
+.cov{padding:18px clamp(20px,5vw,80px);color:#4d4d4d}
+@media(max-width:780px){.row{grid-template-columns:48px 1fr}.row .d,.row .l{grid-column:2;text-align:left}}
+</style>
+</head>
+<body>
+<header><div class="w"><a class="logo" href="https://langa.tv/">langa<span>●</span><b>github.io</b></a><nav class="m"><a href="#tools">Tools</a><a href="#state">State</a><a href="https://lucaprata.github.io/">Founder</a><a href="https://langa.tv/">langa.tv ↗</a></nav></div></header>
+<main>
+<div class="w hero">
+<p class="m"><span class="r">●</span> 00 — LANGA · open tools</p>
+<h1 class="gl" data-t="Humans&#10;decide.">Humans<br>decide<i>.</i></h1>
+<p class="lead">Open tools from LANGA, pulled out of production. Each one checks that what a system claims is what is really there — by shape, by content, by measurement.</p>
+<a class="btn p" href="https://langa.tv/">Enter langa.tv</a><a class="btn" href="https://github.com/langacorp">github.com/langacorp →</a>
+<div class="term">
+<div><em>$</em> org</div>
+<div>LANGA CORPORATION S.R.L. · italy · <em>●</em> verified on github</div>
+<div><em>$</em> rule</div>
+<div>measure, don't deduce</div>
+</div>
+</div>
+<div id="state" class="stats">
+<div id="s1"><b>…</b><span class="m">public repos</span><small>loading</small></div>
+<div id="s2"><b class="r">…</b><span class="m">open tools</span><small>loading</small></div>
+<div id="s3"><b>…</b><span class="m">languages</span><small>loading</small></div>
+<div id="s4"><b>…</b><span class="m">last push</span><small>loading</small></div>
+</div>
+<div class="chips m"><div class="track"><span>Humans decide</span><span>Measure, don't deduce</span><span>Search by shape</span><span>By content, not by status</span><span>A zero is not data</span><span>Claims vs measurements</span><span>No silent errors</span></div></div>
+<section id="tools" style="padding-bottom:40px">
+<div class="w"><p class="m"><span class="r">01</span> — tools · live from github</p></div>
+<div id="list"></div>
+<p id="cov" class="cov m">loading…</p>
+</section>
+</main>
+<footer><div class="w m">© 2026 LANGA Corporation S.R.L. — <a href="https://lucaprata.github.io/">founder</a> · static page · no cookies · no trackers · data live from api.github.com</div></footer>
+<script>
+(function(){
+var ok='live · api.github.com';
+function set(id,v,src){var e=document.getElementById(id);if(!e)return;e.querySelector('b').textContent=v;e.querySelector('small').textContent=src}
+function j(u){return fetch('https://api.github.com'+u).then(function(r){if(!r.ok)throw new Error('http '+r.status);return r.json()})}
+var list=document.getElementById('list'),cov=document.getElementById('cov');
+j('/orgs/langacorp').then(function(o){set('s1',o.public_repos,ok)}).catch(function(e){set('s1','—','n/a · '+e.message)});
+j('/orgs/langacorp/repos?type=public&sort=pushed&per_page=100').then(function(rs){
+var t=rs.filter(function(r){return r.name!=='.github'&&!r.archived&&!r.fork}),langs={};
+t.forEach(function(r,i){if(r.language)langs[r.language]=1;
+var a=document.createElement('a');a.className='row';a.href=r.html_url;
+function c(k,x){var s=document.createElement('span');s.className=k;s.textContent=x;a.appendChild(s)}
+c('n m',String(i+1).padStart(2,'0'));c('t',r.name);c('d',r.description||'— no description');c('l m',r.language||'—');list.appendChild(a)});
+set('s2',t.length,ok);set('s3',Object.keys(langs).length,ok);set('s4',t.length?t[0].pushed_at.slice(0,10):'—',ok);
+cov.textContent=t.length+' tools shown of '+rs.length+' public repos read'+(rs.length===100?' (first page only)':'')+' · excluded: .github profile, forks, archived · '+ok;
+}).catch(function(e){cov.textContent='n/a · '+e.message+' — the list could not be read: open github.com/langacorp';['s2','s3','s4'].forEach(function(i){set(i,'—','n/a · '+e.message)})});
+var tr=document.querySelector('.track');if(tr)tr.innerHTML+=tr.innerHTML;
+})();
+</script>
+</body>
+</html>
