@@ -25,7 +25,7 @@ header .w{display:flex;justify-content:space-between;align-items:center;height:5
 .logo b{color:var(--fg)}
 nav a{margin-left:24px;text-decoration:none}
 nav a:hover{color:var(--red)}
-.hero{min-height:calc(100vh - 54px);display:flex;flex-direction:column;justify-content:center;padding-top:48px;padding-bottom:48px}
+.hero{min-height:calc(100vh - 54px);display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding-top:48px;padding-bottom:48px}
 h1{font:900 clamp(58px,13vw,230px)/.84 var(--sans);letter-spacing:-.04em;margin:22px 0 34px;text-transform:uppercase;text-shadow:0 0 40px rgba(255,26,26,.18)}
 h1 i{font-style:normal;color:var(--red);text-shadow:0 0 24px var(--red)}
 .gl{position:relative}
@@ -36,6 +36,10 @@ h1 i{font-style:normal;color:var(--red);text-shadow:0 0 24px var(--red)}
 @keyframes g2{0%,90%,100%{clip-path:inset(0 0 100% 0);transform:none}91%{clip-path:inset(70% 0 4% 0);transform:translate(-6px,1px)}94%{clip-path:inset(20% 0 66% 0);transform:translate(5px,-1px)}}
 .lead{max-width:40em;font:18px/1.6 var(--sans);color:#c9c9c9;margin:0 0 36px}
 .btn{display:inline-block;font:700 11px var(--mono);letter-spacing:2.5px;text-transform:uppercase;padding:16px 24px;text-decoration:none;border:1px solid var(--fg);margin:0 12px 12px 0;clip-path:polygon(0 0,100% 0,100% 70%,calc(100% - 12px) 100%,0 100%)}
+.cta{display:flex;flex-wrap:wrap;align-items:center;gap:16px 34px}
+.cta .btn{margin:0}
+.btn:not(.p){border:0;border-bottom:1px solid var(--fg);padding:8px 0;clip-path:none}
+.btn:not(.p):hover{background:none;color:var(--red);border-bottom-color:var(--red)}
 .btn.p{background:var(--red);border-color:var(--red);box-shadow:0 0 28px rgba(255,26,26,.45)}
 .btn:hover{background:var(--fg);border-color:var(--fg);color:var(--bg)}
 .term{font:13px/2 var(--mono);margin-top:56px;color:#a8a8a8}
@@ -80,7 +84,7 @@ footer{border-top:1px solid var(--line);padding:28px 0 calc(48px + env(safe-area
 <p class="m"><span class="r">●</span> 00 — LANGA · open tools</p>
 <h1 class="gl" data-t="Humans&#10;decide.">Humans<br>decide<i>.</i></h1>
 <p class="lead">Open tools from LANGA, pulled out of production. Each one checks that what a system claims is what is really there — by shape, by content, by measurement.</p>
-<a class="btn p" href="https://langa.tv/">Enter langa.tv</a><a class="btn" href="https://github.com/langacorp">github.com/langacorp →</a>
+<div class="cta"><a class="btn p" href="https://langa.tv/">Enter langa.tv</a><a class="btn" href="https://github.com/langacorp">github.com/langacorp →</a></div>
 <div class="term">
 <div><em>$</em> org</div>
 <div>LANGA CORPORATION S.R.L. · italy · <em>●</em> verified on github</div>
