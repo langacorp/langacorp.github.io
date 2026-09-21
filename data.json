@@ -1,0 +1,135 @@
+{
+ "generated_at": "2026-09-21T12:48:14Z",
+ "repos": [
+  {
+   "archived": false,
+   "description": "LANGA \u2014 open tools, live from GitHub. Humans decide.",
+   "fork": false,
+   "html_url": "https://github.com/langacorp/langacorp.github.io",
+   "language": "HTML",
+   "name": "langacorp.github.io",
+   "pushed_at": "2026-09-21T12:47:57Z"
+  },
+  {
+   "archived": false,
+   "description": "Find secrets in a git repository by shape, across every ref and every deleted file. Position and category, never the value. Runs before every publication from AEGIS.",
+   "fork": false,
+   "html_url": "https://github.com/langacorp/leakform",
+   "language": "Python",
+   "name": "leakform",
+   "pushed_at": "2026-09-09T07:20:06Z"
+  },
+  {
+   "archived": false,
+   "description": "Find numbers written by hand that no longer match their source. Three outcomes: matched, drifted, or the source did not answer \u2014 and the third is the point.",
+   "fork": false,
+   "html_url": "https://github.com/langacorp/countdrift",
+   "language": "Python",
+   "name": "countdrift",
+   "pushed_at": "2026-09-09T07:17:13Z"
+  },
+  {
+   "archived": false,
+   "description": "Attest that an ML-KEM-768 key exchange really happened, and record it with an expiry. It does not encrypt anything, and the README says so first. Built for AEGIS.",
+   "fork": false,
+   "html_url": "https://github.com/langacorp/kemproof",
+   "language": "PHP",
+   "name": "kemproof",
+   "pushed_at": "2026-09-04T12:46:51Z"
+  },
+  {
+   "archived": false,
+   "description": "Small Flutter pieces pulled out of a production app and de-coupled: interaction widgets, and a failure model that keeps six outcomes distinct instead of collapsing them into one error. Flutter and nothing else.",
+   "fork": false,
+   "html_url": "https://github.com/langacorp/langa-flutter-bits",
+   "language": "Dart",
+   "name": "langa-flutter-bits",
+   "pushed_at": "2026-09-04T12:18:35Z"
+  },
+  {
+   "archived": false,
+   "description": "Seven reusable pieces from a React Three Fiber project: hooks for interactive 3D objects, two GPU shaders, a base material. No scene, no models, no dependencies beyond three and r3f.",
+   "fork": false,
+   "html_url": "https://github.com/langacorp/langa-3d",
+   "language": "JavaScript",
+   "name": "langa-3d",
+   "pushed_at": "2026-09-04T12:17:48Z"
+  },
+  {
+   "archived": false,
+   "description": "WordPress plugin for branding, UI/UX and central site management: maintenance mode, preloader, favicon, admin bar, plus an HMAC-signed client that connects a site to a LANGA management server. GPLv2+.",
+   "fork": false,
+   "html_url": "https://github.com/langacorp/langa-tools-lite",
+   "language": "PHP",
+   "name": "langa-tools-lite",
+   "pushed_at": "2026-09-04T08:00:38Z"
+  },
+  {
+   "archived": false,
+   "description": "Two guards for apps that open their own pages in a WebView: is this URL really ours, and has the page just shown a sign-in wall. No dependencies, nothing hardcoded.",
+   "fork": false,
+   "html_url": "https://github.com/langacorp/login-wall",
+   "language": "Dart",
+   "name": "login-wall",
+   "pushed_at": "2026-09-04T07:56:10Z"
+  },
+  {
+   "archived": false,
+   "description": "Measure whether the copies that should be identical still are. Divergence is a fact; choosing the right version is a decision AEGIS leaves to a person.",
+   "fork": false,
+   "html_url": "https://github.com/langacorp/samecheck",
+   "language": "Python",
+   "name": "samecheck",
+   "pushed_at": "2026-09-04T07:47:50Z"
+  },
+  {
+   "archived": false,
+   "description": "Compare what a system claims with what can be measured, from independent sources. The check AEGIS runs before a number is allowed into a report.",
+   "fork": false,
+   "html_url": "https://github.com/langacorp/provenreal",
+   "language": "Python",
+   "name": "provenreal",
+   "pushed_at": "2026-09-04T07:47:21Z"
+  },
+  {
+   "archived": false,
+   "description": "Check that a route really exists \u2014 by content, not by status code. Catches soft-404s: pages that answer 200 and serve something else. An AEGIS guard.",
+   "fork": false,
+   "html_url": "https://github.com/langacorp/realroute",
+   "language": "Python",
+   "name": "realroute",
+   "pushed_at": "2026-09-04T07:45:42Z"
+  },
+  {
+   "archived": false,
+   "description": "LANGA \u2014 organisation profile. AEGIS, Talos, and the tools that came out of running many hands against a real estate of services.",
+   "fork": false,
+   "html_url": "https://github.com/langacorp/.github",
+   "language": null,
+   "name": ".github",
+   "pushed_at": "2026-09-03T12:44:10Z"
+  },
+  {
+   "archived": false,
+   "description": "OAuth 2.0 authorization server in Node.js, TypeScript and MongoDB. Written in 2021, never deployed, published as-is under MIT so it can be read and reused.",
+   "fork": false,
+   "html_url": "https://github.com/langacorp/auth-server",
+   "language": "JavaScript",
+   "name": "auth-server",
+   "pushed_at": "2026-08-31T07:30:40Z"
+  }
+ ],
+ "repos_page_full": false,
+ "users": {
+  "LucaPRATA": {
+   "created_at": "2021-03-17T13:11:39Z",
+   "followers": 1,
+   "public_repos": 3
+  },
+  "langacorp": {
+   "created_at": "2019-07-05T07:24:34Z",
+   "followers": 6,
+   "public_repos": 13
+  }
+ }
+}
