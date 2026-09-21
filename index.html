@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="it">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>LANGA — Strumenti open</title>
-<meta name="description" content="Gli strumenti open di LANGA: estratti dalla produzione, misurano invece di dedurre.">
+<title>LANGA — Open tools</title>
+<meta name="description" content="Open tools from LANGA: pulled out of production, they measure instead of deducing.">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#050506">
 <link rel="canonical" href="https://langacorp.github.io/">
@@ -57,28 +57,34 @@ footer .in{border-top:1px solid var(--line);padding-top:24px;padding-bottom:calc
 footer a:hover{color:var(--fg)}
 @media(max-width:700px){.row{grid-template-columns:32px 1fr}.row .d,.row .l{grid-column:2;text-align:left}header nav a:not(:last-child){display:none}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+.talk{padding:72px 24px 8px;text-align:center}
+.talk p{margin:0 0 18px;font:12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+.talk .tg{display:flex;flex-wrap:wrap;gap:14px 34px;justify-content:center;font-size:19px}
+.talk a{color:var(--or);text-decoration:none}
+.talk a:hover{text-decoration:underline}
 </style>
 </head>
 <body>
-<header><div class="in"><b>LANGA</b><nav><a href="#strumenti">Strumenti</a><a href="https://about.langa.tv/">About</a><a href="https://langa.tv/">langa.tv ›</a></nav></div></header>
+<header><div class="in"><b>LANGA</b><nav><a href="#tools">Tools</a><a href="https://about.langa.tv/">About</a><a href="https://langa.tv/">langa.tv ›</a></nav></div></header>
 <main>
 <section class="hero">
 <p class="ey">Open source</p>
-<h1>Strumenti che<br><em>misurano.</em></h1>
-<p class="sub">Estratti dalla produzione. Quello che pubblichiamo lo usiamo prima noi, ogni giorno.</p>
-<div class="go"><a href="#strumenti">Gli strumenti ›</a><a href="https://langa.tv/">langa.tv ›</a></div>
+<h1>Tools that<br><em>measure.</em></h1>
+<p class="sub">Pulled out of production. What we publish, we use first, every day.</p>
+<div class="go"><a href="#tools">The tools ›</a><a href="https://langa.tv/">langa.tv ›</a></div>
 </section>
-<section id="strumenti"><div class="in">
-<div class="sh"><p>Dal vivo da GitHub</p><h2>Reali. <em>Misurabili.</em></h2></div>
+<section id="tools"><div class="in">
+<div class="sh"><p>Live from GitHub</p><h2>Real. <em>Measurable.</em></h2></div>
 <div id="list"></div>
-<p id="cov" class="cov">caricamento…</p>
+<p id="cov" class="cov">loading…</p>
 </div></section>
-<section class="end"><h2>Gli umani <em>decidono.</em></h2><p>Le macchine misurano e segnalano. Ogni cosa che non si annulla passa da una persona.</p></section>
+<section class="talk"><p>Talk to us</p><div class="tg"><a href="https://about.langa.tv/support/contact/">Contact ›</a><a href="https://account.langa.tv/register">Create account ›</a><a href="https://about.langa.tv/support/careers/">Careers ›</a></div></section>
+<section class="end"><h2>Humans <em>decide.</em></h2><p>Machines measure and report. Anything that cannot be undone goes through a person.</p></section>
 </main>
-<footer><div class="in"><span>© 2026 LANGA</span><span><a href="https://langa.tv/">langa.tv</a> · <a href="https://about.langa.tv/">about</a> · <a href="https://github.com/langacorp">GitHub</a></span><span>Nessun cookie · dati dal vivo da GitHub</span></div></footer>
+<footer><div class="in"><span>© 2026 LANGA</span><span><a href="https://langa.tv/">langa.tv</a> · <a href="https://about.langa.tv/">about</a> · <a href="https://github.com/langacorp">GitHub</a></span><span>No cookies · live data from GitHub</span></div></footer>
 <script>
 (function(){
-var ok='dal vivo · api.github.com';
+var ok='live · api.github.com';
 function set(id,v,src){var e=document.getElementById(id);if(!e)return;e.querySelector('b').textContent=v;e.querySelector('small').textContent=src}
 function j(u){return fetch('https://api.github.com'+u).then(function(r){if(!r.ok)throw new Error('http '+r.status);return r.json()})}
 var list=document.getElementById('list'),cov=document.getElementById('cov');
@@ -88,10 +94,10 @@ var t=rs.filter(function(r){return r.name!=='.github'&&r.name!=='langacorp.githu
 t.forEach(function(r,i){if(r.language)langs[r.language]=1;
 var a=document.createElement('a');a.className='row';a.href=r.html_url;
 function c(k,x){var s=document.createElement('span');s.className=k;s.textContent=x;a.appendChild(s)}
-c('n m',String(i+1).padStart(2,'0'));c('t',r.name);c('d',r.description||'— senza descrizione');c('l m',r.language||'—');list.appendChild(a)});
+c('n m',String(i+1).padStart(2,'0'));c('t',r.name);c('d',r.description||'— no description');c('l m',r.language||'—');list.appendChild(a)});
 set('s2',t.length,ok);set('s3',Object.keys(langs).length,ok);set('s4',t.length?t[0].pushed_at.slice(0,10):'—',ok);
-cov.textContent=t.length+' strumenti mostrati su '+rs.length+' repository pubblici letti'+(rs.length===100?' (solo prima pagina)':'')+' · esclusi: profilo .github, questo sito, fork, archiviati · '+ok;
-}).catch(function(e){cov.textContent='n/a · '+e.message+' — elenco non leggibile: apri github.com/langacorp';['s2','s3','s4'].forEach(function(i){set(i,'—','n/a · '+e.message)})});
+cov.textContent=t.length+' tools shown of '+rs.length+' public repos read'+(rs.length===100?' (first page only)':'')+' · excluded: .github profile, this site, forks, archived · '+ok;
+}).catch(function(e){cov.textContent='n/a · '+e.message+' — list could not be read: open github.com/langacorp';['s2','s3','s4'].forEach(function(i){set(i,'—','n/a · '+e.message)})});
 var tr=document.querySelector('.track');if(tr)tr.innerHTML+=tr.innerHTML;
 })();
 </script>
