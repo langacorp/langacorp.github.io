@@ -1,111 +1,98 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>LANGA — open tools · humans decide</title>
-<meta name="description" content="LANGA Corporation — open tools pulled out of production. Humans decide.">
+<title>LANGA — Strumenti open · Gli umani decidono</title>
+<meta name="description" content="Gli strumenti open di LANGA: pezzi estratti dalla produzione, che misurano invece di dedurre.">
 <meta name="color-scheme" content="dark">
-<meta name="theme-color" content="#050505">
+<meta name="theme-color" content="#050506">
 <link rel="canonical" href="https://langacorp.github.io/">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' fill='%23050505'/><rect x='5' y='5' width='6' height='6' fill='%23ff1a1a'/></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><circle cx='8' cy='8' r='7' fill='%23f37f0d'/></svg>">
 <style>
-:root{--bg:#050505;--fg:#f5f5f5;--mut:#7d7d7d;--line:#1f1f1f;--red:#ff1a1a;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;--sans:"Helvetica Neue",Helvetica,Arial,system-ui,sans-serif}
+:root{--bg:#050506;--fg:#f5f5f7;--mut:#86868b;--tile:#101012;--line:#1d1d1f;--or:#f37f0d;--sans:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Helvetica Neue",Arial,sans-serif;--mono:ui-monospace,SFMono-Regular,Menlo,monospace}
 *{box-sizing:border-box}
-html,body{margin:0;background:var(--bg);color:var(--fg);overflow-x:hidden}
-body{font:15px/1.6 var(--mono);background-image:radial-gradient(ellipse at 85% 0%,rgba(255,26,26,.16),transparent 55%),linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:auto,48px 48px,48px 48px}
-body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;background:repeating-linear-gradient(0deg,rgba(255,255,255,.035) 0 1px,transparent 1px 3px)}
-a{color:inherit}
-.w{padding:0 clamp(20px,5vw,80px)}
-.m{font-family:var(--mono);font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--mut)}
-.r{color:var(--red)}
-header{position:sticky;top:0;z-index:40;background:rgba(5,5,5,.8);backdrop-filter:blur(6px);padding-top:env(safe-area-inset-top,0px);border-bottom:1px solid;border-image:linear-gradient(90deg,var(--red),transparent 60%) 1}
-header .w{display:flex;justify-content:space-between;align-items:center;height:54px}
-.logo{font-weight:800;color:var(--red);text-decoration:none;font-size:14px;text-shadow:0 0 12px rgba(255,26,26,.6)}
-.logo b{color:var(--fg)}
-nav a{margin-left:24px;text-decoration:none}
-nav a:hover{color:var(--red)}
-.hero{min-height:calc(100vh - 54px);display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding-top:48px;padding-bottom:48px}
-h1{font:900 clamp(58px,13vw,230px)/.84 var(--sans);letter-spacing:-.04em;margin:22px 0 34px;text-transform:uppercase;text-shadow:0 0 40px rgba(255,26,26,.18)}
-h1 i{font-style:normal;color:var(--red);text-shadow:0 0 24px var(--red)}
-.gl{position:relative}
-.gl::before,.gl::after{content:attr(data-t);white-space:pre-line;position:absolute;inset:0;pointer-events:none;clip-path:inset(0 0 100% 0)}
-.gl::before{color:var(--red);animation:g1 4s infinite steps(1)}
-.gl::after{color:#fff;animation:g2 4s infinite steps(1)}
-@keyframes g1{0%,88%,100%{clip-path:inset(0 0 100% 0);transform:none}89%{clip-path:inset(8% 0 62% 0);transform:translate(6px,-2px)}92%{clip-path:inset(58% 0 12% 0);transform:translate(-5px,2px)}95%{clip-path:inset(30% 0 45% 0);transform:translate(4px,0)}}
-@keyframes g2{0%,90%,100%{clip-path:inset(0 0 100% 0);transform:none}91%{clip-path:inset(70% 0 4% 0);transform:translate(-6px,1px)}94%{clip-path:inset(20% 0 66% 0);transform:translate(5px,-1px)}}
-.lead{max-width:40em;font:18px/1.6 var(--sans);color:#c9c9c9;margin:0 0 36px}
-.btn{display:inline-block;font:700 11px var(--mono);letter-spacing:2.5px;text-transform:uppercase;padding:16px 24px;text-decoration:none;border:1px solid var(--fg);margin:0 12px 12px 0;clip-path:polygon(0 0,100% 0,100% 70%,calc(100% - 12px) 100%,0 100%)}
-.cta{display:flex;flex-wrap:wrap;align-items:center;gap:16px 34px}
-.cta .btn{margin:0}
-.btn:not(.p){border:0;border-bottom:1px solid var(--fg);padding:8px 0;clip-path:none}
-.btn:not(.p):hover{background:none;color:var(--red);border-bottom-color:var(--red)}
-.btn.p{background:var(--red);border-color:var(--red);box-shadow:0 0 28px rgba(255,26,26,.45)}
-.btn:hover{background:var(--fg);border-color:var(--fg);color:var(--bg)}
-.term{font:13px/2 var(--mono);margin-top:56px;color:#a8a8a8}
-.term em{font-style:normal;color:var(--red)}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:0 clamp(20px,5vw,80px)}
-.stats>div{padding:40px 0 34px;border-right:1px solid var(--line);padding-right:24px;padding-left:24px}
-.stats>div:first-child{padding-left:0}
-.stats>div:last-child{border-right:0}
-.stats b{display:block;font:900 clamp(52px,6vw,88px)/1 var(--sans);letter-spacing:-2px;margin-bottom:14px}
-.stats b.r{text-shadow:0 0 30px rgba(255,26,26,.7)}
-.stats small{display:block;margin-top:6px;font:10px var(--mono);letter-spacing:1px;color:#4d4d4d}
-.chips{overflow:hidden;border-bottom:1px solid var(--line);padding:22px 0;white-space:nowrap}
-.track{display:inline-flex;gap:44px;padding-left:44px;animation:mq 45s linear infinite}
-.track span::before{content:"● ";color:var(--red)}
-@keyframes mq{to{transform:translateX(-50%)}}
-section{padding:120px 0}
-.card{display:grid;grid-template-columns:auto 1fr;gap:clamp(24px,4vw,64px);align-items:center}
-.mono{font:900 clamp(110px,18vw,300px)/.8 var(--sans);letter-spacing:-.06em;color:var(--red);text-shadow:0 0 50px rgba(255,26,26,.45)}
-.card h2{font:900 clamp(40px,6vw,96px)/.9 var(--sans);letter-spacing:-.03em;margin:0 0 16px;text-transform:uppercase}
-.links{display:flex;flex-wrap:wrap;gap:12px 30px;margin-top:30px}
-.links a{font:12px var(--mono);text-decoration:none;border-bottom:1px solid transparent}
-.links a::before{content:"→ ";color:var(--red)}
-.links a:hover{color:var(--red);border-bottom-color:var(--red)}
-footer{border-top:1px solid var(--line);padding:28px 0 calc(48px + env(safe-area-inset-bottom,0px))}
-@media(max-width:680px){.card{grid-template-columns:1fr}nav a:not(:last-child){display:none}.stats>div{border-right:0;border-bottom:1px solid var(--line);padding-left:0}}
-@media(prefers-reduced-motion:reduce){.gl::before,.gl::after,.track{animation:none}}
-#list{border-top:1px solid var(--line)}
-.row{display:grid;grid-template-columns:70px minmax(160px,1fr) 2.2fr 130px;gap:24px;align-items:baseline;padding:28px clamp(20px,5vw,80px);border-bottom:1px solid var(--line);text-decoration:none;transition:background .15s}
-.row .t{font:900 clamp(26px,3vw,44px)/1 var(--sans);letter-spacing:-.02em;text-transform:lowercase}
-.row .d{color:#b5b5b5;font:15px/1.55 var(--sans)}
-.row .l{text-align:right;color:var(--red)}
-.row:hover{background:rgba(255,26,26,.07)}
-.row:hover .t{color:var(--red);text-shadow:0 0 18px rgba(255,26,26,.6)}
-.cov{padding:18px clamp(20px,5vw,80px);color:#4d4d4d}
-@media(max-width:780px){.row{grid-template-columns:48px 1fr}.row .d,.row .l{grid-column:2;text-align:left}}
+html{scroll-behavior:smooth}
+html,body{margin:0;background:var(--bg);color:var(--fg)}
+body{font:17px/1.47 var(--sans);letter-spacing:-.022em;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;z-index:10;background:rgba(0,0,0,.72);backdrop-filter:saturate(180%) blur(20px);padding-top:env(safe-area-inset-top,0px)}
+header .in{max-width:1000px;margin:0 auto;height:48px;display:flex;align-items:center;justify-content:space-between;padding:0 22px;font-size:12px;color:#d2d2d7}
+header b{font-size:16px;color:var(--fg);font-weight:600;letter-spacing:-.02em}
+header b span{color:var(--or)}
+header nav a{margin-left:24px}
+header nav a:hover{color:#fff}
+.hero{min-height:calc(100vh - 48px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:88px 22px 60px;position:relative;overflow:hidden;isolation:isolate}
+.hero::after{content:"";position:absolute;left:50%;top:58%;width:min(900px,120vw);height:600px;transform:translate(-50%,-50%);z-index:-1;background:radial-gradient(closest-side,rgba(243,127,13,.16),transparent)}
+.hero::before{content:"";position:absolute;inset:-10% 0;z-index:-1;background-image:radial-gradient(1.6px 1.6px at 20% 10%,rgba(243,127,13,.75),transparent 60%),radial-gradient(1.4px 1.4px at 68% 32%,rgba(243,127,13,.55),transparent 60%),radial-gradient(1.2px 1.2px at 40% 70%,rgba(255,255,255,.35),transparent 60%),radial-gradient(1.5px 1.5px at 85% 80%,rgba(243,127,13,.6),transparent 60%),radial-gradient(1px 1px at 10% 60%,rgba(255,255,255,.3),transparent 60%);background-size:320px 320px;animation:drift 60s linear infinite}
+@keyframes drift{to{background-position:0 -320px}}
+.ey{font-size:17px;color:var(--or);margin:0 0 14px}
+h1{margin:0;font-size:clamp(60px,12vw,104px);font-weight:700;letter-spacing:-.06em;line-height:.92;padding-bottom:.12em;background:linear-gradient(180deg,#fff 30%,rgba(255,255,255,.65));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.sub{font-size:clamp(19px,2.5vw,28px);margin:24px auto 0;max-width:620px;line-height:1.35;letter-spacing:-.025em;color:rgba(255,255,255,.42)}
+.cta{display:flex;gap:24px;align-items:center;justify-content:center;flex-wrap:wrap;margin-top:36px}
+.lk{font-size:21px;color:var(--or);display:inline-flex;gap:.2em;align-items:center;transition:gap .3s}
+.lk:hover{gap:.45em}
+.pill{display:inline-flex;padding:12px 28px;border-radius:980px;background:var(--or);color:#fff;font-size:14px;font-weight:600;letter-spacing:-.01em}
+.pill:hover{filter:brightness(1.12)}
+.stats{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:20px;padding:30px 22px 80px;text-align:center}
+.stats b{display:block;font-size:clamp(44px,6vw,64px);font-weight:700;letter-spacing:-.04em;line-height:1}
+.stats b.r{color:var(--or)}
+.stats .m{display:block;color:var(--mut);font-size:14px;margin-top:8px}
+.stats small{display:block;color:#48484a;font-size:11px;margin-top:4px}
+section{padding:90px 22px}
+.sh{text-align:center;max-width:820px;margin:0 auto 56px}
+.sh .e{color:var(--or);font-size:17px;margin:0 0 10px}
+.sh h2{margin:0;font-size:clamp(40px,6vw,64px);font-weight:700;letter-spacing:-.05em;line-height:1.02}
+.sh .s{color:var(--mut);font-size:clamp(17px,2vw,21px);margin:18px auto 0;max-width:640px}
+#list{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr));gap:20px}
+.row{display:flex;flex-direction:column;background:var(--tile);border-radius:28px;padding:30px 30px 26px;min-height:250px;transition:transform .3s,background .3s}
+.row:hover{transform:scale(1.015);background:#17171a}
+.row .n{font:12px var(--mono);color:var(--mut)}
+.row .t{font-size:30px;font-weight:700;letter-spacing:-.04em;margin:10px 0}
+.row .d{color:#a1a1a6;font-size:15px;line-height:1.45;flex:1}
+.row .l{margin-top:20px;font-size:14px;color:var(--or)}
+.row .l::after{content:" ›"}
+.cov{text-align:center;color:#48484a;font-size:12px;margin:28px 0 0}
+.meth{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:20px}
+.meth div{background:var(--tile);border-radius:28px;padding:30px}
+.meth b{display:block;font-size:22px;letter-spacing:-.03em;margin-bottom:8px}
+.meth p{margin:0;color:#a1a1a6;font-size:15px}
+footer{border-top:1px solid var(--line);max-width:1000px;margin:0 auto;padding:22px 22px calc(40px + env(safe-area-inset-bottom,0px));font-size:12px;color:var(--mut);display:flex;flex-wrap:wrap;gap:8px 22px;justify-content:space-between}
+footer a:hover{color:#fff}
+@media(max-width:640px){header nav a:not(:last-child){display:none}}
+@media(prefers-reduced-motion:reduce){.hero::before{animation:none}.row{transition:none}}
 </style>
 </head>
 <body>
-<header><div class="w"><a class="logo" href="https://langa.tv/">langa<span>●</span><b>github.io</b></a><nav class="m"><a href="#tools">Tools</a><a href="#state">State</a><a href="https://lucaprata.github.io/">Founder</a><a href="https://langa.tv/">langa.tv ↗</a></nav></div></header>
+<header><div class="in"><b>LANGA<span>.</span></b><nav><a href="#tools">Strumenti</a><a href="#metodo">Metodo</a><a href="https://about.langa.tv/">About</a><a href="https://langa.tv/">langa.tv ›</a></nav></div></header>
 <main>
-<div class="w hero">
-<p class="m"><span class="r">●</span> 00 — LANGA · open tools</p>
-<h1 class="gl" data-t="Humans&#10;decide.">Humans<br>decide<i>.</i></h1>
-<p class="lead">Open tools from LANGA, pulled out of production. Each one checks that what a system claims is what is really there — by shape, by content, by measurement.</p>
-<div class="cta"><a class="btn p" href="https://langa.tv/">Enter langa.tv</a><a class="btn" href="https://github.com/langacorp">github.com/langacorp →</a></div>
-<div class="term">
-<div><em>$</em> org</div>
-<div>LANGA CORPORATION S.R.L. · italy · <em>●</em> verified on github</div>
-<div><em>$</em> rule</div>
-<div>measure, don't deduce</div>
-</div>
-</div>
+<section class="hero">
+<p class="ey">Open source, dal cantiere LANGA</p>
+<h1>Strumenti<br>che misurano.</h1>
+<p class="sub">Pezzi estratti dalla produzione. Quello che pubblichiamo lo usiamo prima noi, ogni giorno.</p>
+<div class="cta"><a class="lk" href="#tools">Scopri gli strumenti<span>›</span></a><a class="pill" href="https://langa.tv/">Vai su langa.tv</a></div>
+</section>
 <div id="state" class="stats">
-<div id="s1"><b>…</b><span class="m">public repos</span><small>loading</small></div>
-<div id="s2"><b class="r">…</b><span class="m">open tools</span><small>loading</small></div>
-<div id="s3"><b>…</b><span class="m">languages</span><small>loading</small></div>
-<div id="s4"><b>…</b><span class="m">last push</span><small>loading</small></div>
+<div id="s1"><b>…</b><span class="m">repository pubblici</span><small>caricamento</small></div>
+<div id="s2"><b class="r">…</b><span class="m">strumenti open</span><small>caricamento</small></div>
+<div id="s3"><b>…</b><span class="m">linguaggi</span><small>caricamento</small></div>
+<div id="s4"><b>…</b><span class="m">ultimo push</span><small>caricamento</small></div>
 </div>
-<div class="chips m"><div class="track"><span>Humans decide</span><span>Measure, don't deduce</span><span>Search by shape</span><span>By content, not by status</span><span>A zero is not data</span><span>Claims vs measurements</span><span>No silent errors</span></div></div>
-<section id="tools" style="padding-bottom:40px">
-<div class="w"><p class="m"><span class="r">01</span> — tools · live from github</p></div>
+<section id="tools">
+<div class="sh"><p class="e">Dal vivo da GitHub</p><h2>Strumenti reali.<br>Risultati misurabili.</h2><p class="s">Ognuno controlla che quello che un sistema dichiara sia quello che c'è davvero.</p></div>
 <div id="list"></div>
-<p id="cov" class="cov m">loading…</p>
+<p id="cov" class="cov">caricamento…</p>
+</section>
+<section id="metodo">
+<div class="sh"><p class="e">Il metodo</p><h2>Gli umani decidono.</h2><p class="s">Le macchine misurano e segnalano. Ogni cosa che non si annulla passa da una persona.</p></div>
+<div class="meth">
+<div><b>Misura, non dedurre.</b><p>Un numero si mostra solo se si può dire vero.</p></div>
+<div><b>Cerca per forma.</b><p>Non per nome: chi usa conta più di chi nomina.</p></div>
+<div><b>Nessun errore muto.</b><p>Un vuoto porta sempre il proprio motivo.</p></div>
+</div>
 </section>
 </main>
-<footer><div class="w m">© 2026 LANGA Corporation S.R.L. — <a href="https://lucaprata.github.io/">founder</a> · static page · no cookies · no trackers · data live from api.github.com</div></footer>
+<footer><span>© 2026 LANGA Corporation S.R.L.</span><span><a href="https://langa.tv/">langa.tv</a> · <a href="https://about.langa.tv/">about</a> · <a href="https://github.com/langacorp">GitHub</a> · <a href="https://lucaprata.github.io/">Luca Prata</a></span><span>Pagina statica · nessun cookie · dati dal vivo da api.github.com</span></footer>
 <script>
 (function(){
 var ok='live · api.github.com';
@@ -114,13 +101,13 @@ function j(u){return fetch('https://api.github.com'+u).then(function(r){if(!r.ok
 var list=document.getElementById('list'),cov=document.getElementById('cov');
 j('/orgs/langacorp').then(function(o){set('s1',o.public_repos,ok)}).catch(function(e){set('s1','—','n/a · '+e.message)});
 j('/orgs/langacorp/repos?type=public&sort=pushed&per_page=100').then(function(rs){
-var t=rs.filter(function(r){return r.name!=='.github'&&!r.archived&&!r.fork}),langs={};
+var t=rs.filter(function(r){return r.name!=='.github'&&r.name!=='langacorp.github.io'&&!r.archived&&!r.fork}),langs={};
 t.forEach(function(r,i){if(r.language)langs[r.language]=1;
 var a=document.createElement('a');a.className='row';a.href=r.html_url;
 function c(k,x){var s=document.createElement('span');s.className=k;s.textContent=x;a.appendChild(s)}
 c('n m',String(i+1).padStart(2,'0'));c('t',r.name);c('d',r.description||'— no description');c('l m',r.language||'—');list.appendChild(a)});
 set('s2',t.length,ok);set('s3',Object.keys(langs).length,ok);set('s4',t.length?t[0].pushed_at.slice(0,10):'—',ok);
-cov.textContent=t.length+' tools shown of '+rs.length+' public repos read'+(rs.length===100?' (first page only)':'')+' · excluded: .github profile, forks, archived · '+ok;
+cov.textContent=t.length+' tools shown of '+rs.length+' public repos read'+(rs.length===100?' (first page only)':'')+' · excluded: .github profile, this site, forks, archived · '+ok;
 }).catch(function(e){cov.textContent='n/a · '+e.message+' — the list could not be read: open github.com/langacorp';['s2','s3','s4'].forEach(function(i){set(i,'—','n/a · '+e.message)})});
 var tr=document.querySelector('.track');if(tr)tr.innerHTML+=tr.innerHTML;
 })();
