@@ -1,6 +1,15 @@
 {
- "generated_at": "2026-10-04T19:35:49Z",
+ "generated_at": "2026-10-04T23:06:46Z",
  "repos": [
+  {
+   "archived": false,
+   "description": "LANGA \u2014 open tools, live from GitHub. Humans decide.",
+   "fork": false,
+   "html_url": "https://github.com/langacorp/langacorp.github.io",
+   "language": "HTML",
+   "name": "langacorp.github.io",
+   "pushed_at": "2026-10-04T19:35:50Z"
+  },
   {
    "archived": false,
    "description": "LANGA \u2014 organisation profile. AEGIS, Talos, and the tools that came out of running many hands against a real estate of services.",
@@ -63,15 +72,6 @@
    "language": "Python",
    "name": "realroute",
    "pushed_at": "2026-10-04T18:49:53Z"
-  },
-  {
-   "archived": false,
-   "description": "LANGA \u2014 open tools, live from GitHub. Humans decide.",
-   "fork": false,
-   "html_url": "https://github.com/langacorp/langacorp.github.io",
-   "language": "HTML",
-   "name": "langacorp.github.io",
-   "pushed_at": "2026-10-04T15:20:27Z"
   },
   {
    "archived": false,
