@@ -1,32 +1,14 @@
 {
- "generated_at": "2026-10-04T15:20:26Z",
+ "generated_at": "2026-10-04T19:35:49Z",
  "repos": [
   {
    "archived": false,
-   "description": "LANGA \u2014 open tools, live from GitHub. Humans decide.",
+   "description": "LANGA \u2014 organisation profile. AEGIS, Talos, and the tools that came out of running many hands against a real estate of services.",
    "fork": false,
-   "html_url": "https://github.com/langacorp/langacorp.github.io",
-   "language": "HTML",
-   "name": "langacorp.github.io",
-   "pushed_at": "2026-10-04T09:43:38Z"
-  },
-  {
-   "archived": false,
-   "description": "Find secrets in a git repository by shape, across every ref and every deleted file. Position and category, never the value. Runs before every publication from AEGIS.",
-   "fork": false,
-   "html_url": "https://github.com/langacorp/leakform",
-   "language": "Python",
-   "name": "leakform",
-   "pushed_at": "2026-09-09T07:20:06Z"
-  },
-  {
-   "archived": false,
-   "description": "Find numbers written by hand that no longer match their source. Three outcomes: matched, drifted, or the source did not answer \u2014 and the third is the point.",
-   "fork": false,
-   "html_url": "https://github.com/langacorp/countdrift",
-   "language": "Python",
-   "name": "countdrift",
-   "pushed_at": "2026-09-09T07:17:13Z"
+   "html_url": "https://github.com/langacorp/.github",
+   "language": null,
+   "name": ".github",
+   "pushed_at": "2026-10-04T19:07:57Z"
   },
   {
    "archived": false,
@@ -35,7 +17,61 @@
    "html_url": "https://github.com/langacorp/kemproof",
    "language": "PHP",
    "name": "kemproof",
-   "pushed_at": "2026-09-04T12:46:51Z"
+   "pushed_at": "2026-10-04T18:58:37Z"
+  },
+  {
+   "archived": false,
+   "description": "Compare what a system claims with what can be measured, from independent sources. The check AEGIS runs before a number is allowed into a report.",
+   "fork": false,
+   "html_url": "https://github.com/langacorp/provenreal",
+   "language": "Python",
+   "name": "provenreal",
+   "pushed_at": "2026-10-04T18:55:06Z"
+  },
+  {
+   "archived": false,
+   "description": "Measure whether the copies that should be identical still are. Divergence is a fact; choosing the right version is a decision AEGIS leaves to a person.",
+   "fork": false,
+   "html_url": "https://github.com/langacorp/samecheck",
+   "language": "Python",
+   "name": "samecheck",
+   "pushed_at": "2026-10-04T18:54:46Z"
+  },
+  {
+   "archived": false,
+   "description": "Find numbers written by hand that no longer match their source. Three outcomes: matched, drifted, or the source did not answer \u2014 and the third is the point.",
+   "fork": false,
+   "html_url": "https://github.com/langacorp/countdrift",
+   "language": "Python",
+   "name": "countdrift",
+   "pushed_at": "2026-10-04T18:51:21Z"
+  },
+  {
+   "archived": false,
+   "description": "Find secrets in a git repository by shape, across every ref and every deleted file. Position and category, never the value. Runs before every publication from AEGIS.",
+   "fork": false,
+   "html_url": "https://github.com/langacorp/leakform",
+   "language": "Python",
+   "name": "leakform",
+   "pushed_at": "2026-10-04T18:51:15Z"
+  },
+  {
+   "archived": false,
+   "description": "Check that a route really exists \u2014 by content, not by status code. Catches soft-404s: pages that answer 200 and serve something else. An AEGIS guard.",
+   "fork": false,
+   "html_url": "https://github.com/langacorp/realroute",
+   "language": "Python",
+   "name": "realroute",
+   "pushed_at": "2026-10-04T18:49:53Z"
+  },
+  {
+   "archived": false,
+   "description": "LANGA \u2014 open tools, live from GitHub. Humans decide.",
+   "fork": false,
+   "html_url": "https://github.com/langacorp/langacorp.github.io",
+   "language": "HTML",
+   "name": "langacorp.github.io",
+   "pushed_at": "2026-10-04T15:20:27Z"
   },
   {
    "archived": false,
@@ -72,42 +108,6 @@
    "language": "Dart",
    "name": "login-wall",
    "pushed_at": "2026-09-04T07:56:10Z"
-  },
-  {
-   "archived": false,
-   "description": "Measure whether the copies that should be identical still are. Divergence is a fact; choosing the right version is a decision AEGIS leaves to a person.",
-   "fork": false,
-   "html_url": "https://github.com/langacorp/samecheck",
-   "language": "Python",
-   "name": "samecheck",
-   "pushed_at": "2026-09-04T07:47:50Z"
-  },
-  {
-   "archived": false,
-   "description": "Compare what a system claims with what can be measured, from independent sources. The check AEGIS runs before a number is allowed into a report.",
-   "fork": false,
-   "html_url": "https://github.com/langacorp/provenreal",
-   "language": "Python",
-   "name": "provenreal",
-   "pushed_at": "2026-09-04T07:47:21Z"
-  },
-  {
-   "archived": false,
-   "description": "Check that a route really exists \u2014 by content, not by status code. Catches soft-404s: pages that answer 200 and serve something else. An AEGIS guard.",
-   "fork": false,
-   "html_url": "https://github.com/langacorp/realroute",
-   "language": "Python",
-   "name": "realroute",
-   "pushed_at": "2026-09-04T07:45:42Z"
-  },
-  {
-   "archived": false,
-   "description": "LANGA \u2014 organisation profile. AEGIS, Talos, and the tools that came out of running many hands against a real estate of services.",
-   "fork": false,
-   "html_url": "https://github.com/langacorp/.github",
-   "language": null,
-   "name": ".github",
-   "pushed_at": "2026-09-03T12:44:10Z"
   },
   {
    "archived": false,
