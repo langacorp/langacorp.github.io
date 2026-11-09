@@ -1,6 +1,15 @@
 {
- "generated_at": "2026-11-08T21:07:22Z",
+ "generated_at": "2026-11-09T00:50:28Z",
  "repos": [
+  {
+   "archived": false,
+   "description": "LANGA \u2014 open tools, live from GitHub. Humans decide.",
+   "fork": false,
+   "html_url": "https://github.com/langacorp/langacorp.github.io",
+   "language": "HTML",
+   "name": "langacorp.github.io",
+   "pushed_at": "2026-11-08T21:07:23Z"
+  },
   {
    "archived": false,
    "description": "Seven reusable pieces from a React Three Fiber project: hooks for interactive 3D objects, two GPU shaders, a base material. No scene, no models, no dependencies beyond three and r3f.",
@@ -9,15 +18,6 @@
    "language": "JavaScript",
    "name": "langa-3d",
    "pushed_at": "2026-11-08T18:34:56Z"
-  },
-  {
-   "archived": false,
-   "description": "LANGA \u2014 open tools, live from GitHub. Humans decide.",
-   "fork": false,
-   "html_url": "https://github.com/langacorp/langacorp.github.io",
-   "language": "HTML",
-   "name": "langacorp.github.io",
-   "pushed_at": "2026-11-08T16:40:15Z"
   },
   {
    "archived": false,
