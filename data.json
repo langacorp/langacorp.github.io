@@ -1,6 +1,51 @@
 {
- "generated_at": "2026-11-24T04:44:52Z",
+ "generated_at": "2026-11-24T15:50:07Z",
  "repos": [
+  {
+   "archived": false,
+   "description": "Find secrets in a git repository by shape, across every ref and every deleted file. Position and category, never the value. Runs before every publication from AEGIS.",
+   "fork": false,
+   "html_url": "https://github.com/langacorp/leakform",
+   "language": "Python",
+   "name": "leakform",
+   "pushed_at": "2026-11-24T14:14:56Z"
+  },
+  {
+   "archived": false,
+   "description": "Find numbers written by hand that no longer match their source. Three outcomes: matched, drifted, or the source did not answer \u2014 and the third is the point.",
+   "fork": false,
+   "html_url": "https://github.com/langacorp/countdrift",
+   "language": "Python",
+   "name": "countdrift",
+   "pushed_at": "2026-11-24T14:00:06Z"
+  },
+  {
+   "archived": false,
+   "description": "Measure whether the copies that should be identical still are. Divergence is a fact; choosing the right version is a decision AEGIS leaves to a person.",
+   "fork": false,
+   "html_url": "https://github.com/langacorp/samecheck",
+   "language": "Python",
+   "name": "samecheck",
+   "pushed_at": "2026-11-24T14:00:04Z"
+  },
+  {
+   "archived": false,
+   "description": "Check that a route really exists \u2014 by content, not by status code. Catches soft-404s: pages that answer 200 and serve something else. An AEGIS guard.",
+   "fork": false,
+   "html_url": "https://github.com/langacorp/realroute",
+   "language": "Python",
+   "name": "realroute",
+   "pushed_at": "2026-11-24T14:00:02Z"
+  },
+  {
+   "archived": false,
+   "description": "Compare what a system claims with what can be measured, from independent sources. The check AEGIS runs before a number is allowed into a report.",
+   "fork": false,
+   "html_url": "https://github.com/langacorp/provenreal",
+   "language": "Python",
+   "name": "provenreal",
+   "pushed_at": "2026-11-24T13:59:57Z"
+  },
   {
    "archived": false,
    "description": "LANGA \u2014 open tools, live from GitHub. Humans decide.",
@@ -8,7 +53,7 @@
    "html_url": "https://github.com/langacorp/langacorp.github.io",
    "language": "HTML",
    "name": "langacorp.github.io",
-   "pushed_at": "2026-11-23T20:09:53Z"
+   "pushed_at": "2026-11-24T04:44:53Z"
   },
   {
    "archived": false,
@@ -36,51 +81,6 @@
    "language": "PHP",
    "name": "kemproof",
    "pushed_at": "2026-10-04T18:58:37Z"
-  },
-  {
-   "archived": false,
-   "description": "Compare what a system claims with what can be measured, from independent sources. The check AEGIS runs before a number is allowed into a report.",
-   "fork": false,
-   "html_url": "https://github.com/langacorp/provenreal",
-   "language": "Python",
-   "name": "provenreal",
-   "pushed_at": "2026-10-04T18:55:06Z"
-  },
-  {
-   "archived": false,
-   "description": "Measure whether the copies that should be identical still are. Divergence is a fact; choosing the right version is a decision AEGIS leaves to a person.",
-   "fork": false,
-   "html_url": "https://github.com/langacorp/samecheck",
-   "language": "Python",
-   "name": "samecheck",
-   "pushed_at": "2026-10-04T18:54:46Z"
-  },
-  {
-   "archived": false,
-   "description": "Find numbers written by hand that no longer match their source. Three outcomes: matched, drifted, or the source did not answer \u2014 and the third is the point.",
-   "fork": false,
-   "html_url": "https://github.com/langacorp/countdrift",
-   "language": "Python",
-   "name": "countdrift",
-   "pushed_at": "2026-10-04T18:51:21Z"
-  },
-  {
-   "archived": false,
-   "description": "Find secrets in a git repository by shape, across every ref and every deleted file. Position and category, never the value. Runs before every publication from AEGIS.",
-   "fork": false,
-   "html_url": "https://github.com/langacorp/leakform",
-   "language": "Python",
-   "name": "leakform",
-   "pushed_at": "2026-10-04T18:51:15Z"
-  },
-  {
-   "archived": false,
-   "description": "Check that a route really exists \u2014 by content, not by status code. Catches soft-404s: pages that answer 200 and serve something else. An AEGIS guard.",
-   "fork": false,
-   "html_url": "https://github.com/langacorp/realroute",
-   "language": "Python",
-   "name": "realroute",
-   "pushed_at": "2026-10-04T18:49:53Z"
   },
   {
    "archived": false,
