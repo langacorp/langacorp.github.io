@@ -1,6 +1,15 @@
 {
- "generated_at": "2026-11-24T15:50:07Z",
+ "generated_at": "2026-11-25T00:40:00Z",
  "repos": [
+  {
+   "archived": false,
+   "description": "LANGA \u2014 open tools, live from GitHub. Humans decide.",
+   "fork": false,
+   "html_url": "https://github.com/langacorp/langacorp.github.io",
+   "language": "HTML",
+   "name": "langacorp.github.io",
+   "pushed_at": "2026-11-24T15:50:08Z"
+  },
   {
    "archived": false,
    "description": "Find secrets in a git repository by shape, across every ref and every deleted file. Position and category, never the value. Runs before every publication from AEGIS.",
@@ -45,15 +54,6 @@
    "language": "Python",
    "name": "provenreal",
    "pushed_at": "2026-11-24T13:59:57Z"
-  },
-  {
-   "archived": false,
-   "description": "LANGA \u2014 open tools, live from GitHub. Humans decide.",
-   "fork": false,
-   "html_url": "https://github.com/langacorp/langacorp.github.io",
-   "language": "HTML",
-   "name": "langacorp.github.io",
-   "pushed_at": "2026-11-24T04:44:53Z"
   },
   {
    "archived": false,
